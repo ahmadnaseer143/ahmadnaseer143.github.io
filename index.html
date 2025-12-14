@@ -3,40 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <title>Your Name</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+      text-align: center;
+      color: #f1f8ff;
+      background-image: url("./assets/background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .main {
+      background-color: #000;
+      width: 80%;
+      height: 100%;
+      margin: 0 10%;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    img.profile {
+      margin: 5px;
+      padding: 20px;
+      width: 400px;
+      border-radius: 50%;
+    }
+
+    .container {
+      margin-top: 60px;
+      position: relative;
+    }
+
+    .description {
       max-width: 800px;
-      margin: 60px auto;
+      margin: 20px auto;
+      font-size: 18px;
       line-height: 1.6;
     }
-    h1 { font-size: 36px; }
-    a { color: #0366d6; text-decoration: none; }
+
+    .social a {
+      margin: 0 10px;
+      color: #f1f8ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .resume {
+      margin-top: 30px;
+    }
   </style>
 </head>
+
 <body>
 
-<h1>Your Name</h1>
-<p>
-  Data Analyst | Python | Pandas | SQL
-</p>
+  <div class="main"></div>
 
-<p>
-  📧 your@email.com <br>
-  🔗 <a href="https://github.com/yourusername">GitHub</a> |
-     <a href="https://linkedin.com/in/yourname">LinkedIn</a>
-</p>
+  <div class="container">
 
-<h2>About Me</h2>
-<p>
-  Short introduction about you.
-</p>
+    <!-- Profile Image -->
+    <img
+      class="profile"
+      src="./assets/20200905_085628.jpg"
+      alt="My Picture"
+    >
 
-<h2>Projects</h2>
-<ul>
-  <li><b>Project 1</b> – description</li>
-  <li><b>Project 2</b> – description</li>
-</ul>
+    <!-- HelloWorld replacement -->
+    <p class="description">
+      I am an International Student from Pakistan, Double Majoring in
+      Computer Science and Economics at Knox College. I am interested in
+      Full Stack Web and Mobile development and currently looking for
+      Software Engineering Internships.
+    </p>
+
+    <!-- SocialMedia replacement -->
+    <div class="social">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      <a href="mailto:you@email.com">Email</a>
+    </div>
+
+    <!-- ResComp replacement -->
+    <div class="resume">
+      <a href="./assets/resume.pdf" target="_blank">📄 View Resume</a>
+    </div>
+
+  </div>
 
 </body>
 </html>
